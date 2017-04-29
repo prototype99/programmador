@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>alexander.konotop@gmail.com</email>
+		<name>Alexander Konotop</name>
+	</maintainer>
+	<longdescription>CloudCross is open source software for the synchronization of local files and folders with multiple cloud storages. Currently CloudCross supports sync with Yandex.Disk Google Drive Cloud mail.ru OneDrive and Dropbox</longdescription>
+</pkgmetadata>
