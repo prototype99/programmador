@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <longdescription lang="en">Flexible project management web application. Written using the Ruby on Rails framework</longdescription>
+  <maintainer type="person">
+    <email>alexander.konotop@gmail.com</email>
+    <name>Alexander Konotop</name>
+  </maintainer>
+  <use>
+    <flag name="passenger">Enable support for <pkg>www-apache/passenger</pkg></flag>
+    <flag name="suburi">Install redmine in "/redmine" suburi. See http://www.redmine.org/projects/redmine/wiki/HowTo_Install_Redmine_in_a_sub-URI</flag>
+    <flag name="systemd">Install fcgi service and socket for systemd</flag>
+    <flag name="lighttpd">Install lighttpd config file. It's for using with fastcgi and systemd. If you want custom lighttpd setup just don't use this flag</flag>
+    <flag name="default-dispatch">Create dispatch.fcgi just by copying the default dispatch.fcgi.example</flag>
+  </use>
+</pkgmetadata>
