@@ -1,0 +1,17 @@
+[Unit]
+Description=Redmine service
+After=network.target postgresql.service mysql.service
+Wants=postgresql.service mysql.service
+
+[Service]
+User=redmine
+Group=redmine
+StandardOutput=null
+StandardInput=socket
+StandardError=syslog
+ExecStart=/var/lib/redmine/public/dispatch.fcgi
+Environment=RAILS_ENV=production
+Environment=RAILS_RELATIVE_URL_ROOT="/redmine"
+
+[Install]
+WantedBy=multi-user.target

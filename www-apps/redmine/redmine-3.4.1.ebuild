@@ -73,7 +73,7 @@ all_ruby_prepare() {
 
 	use suburi && epatch "${FILESDIR}/${P}-suburi.patch"
 
-		# bug #406605
+	# bug #406605
 	rm .gitignore .hgignore || die
 
 	rm Gemfile || die
@@ -125,7 +125,11 @@ all_ruby_install() {
 
 	if use systemd; then
 		insinto /usr/lib/systemd/system
-		doins "${FILESDIR}/redmine.service"
+		if use suburi; then
+			newins "${FILESDIR}/redmine-suburi.service" redmine.service
+		else
+			doins "${FILESDIR}/redmine.service"
+		fi
 		doins "${FILESDIR}/redmine.socket"
 	fi
 
