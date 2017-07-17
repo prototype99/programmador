@@ -73,9 +73,7 @@ all_ruby_prepare() {
 
 	use suburi && epatch "${FILESDIR}/${P}-suburi.patch"
 
-	use default-dispatch && cp -p public/dispatch.fcgi.example public/dispatch.fcgi
-
-	# bug #406605
+		# bug #406605
 	rm .gitignore .hgignore || die
 
 	rm Gemfile || die
@@ -138,6 +136,11 @@ all_ruby_install() {
 		else
 			newins "${FILESDIR}/app-redmine-domain.conf" redmine.conf
 		fi
+	fi
+
+	if use default-dispatch; then
+		exeinto "${REDMINE_DIR}/public"
+		newexe "public/dispatch.fcgi.example" dispatch.fcgi
 	fi
 
 	if use passenger; then
