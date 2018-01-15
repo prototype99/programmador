@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>alexander.konotop@gmail.com</email>
+		<name>Alexander Konotop</name>
+	</maintainer>
+	<longdescription lang="en">
+		Examples for the Qt5 framework
+	</longdescription>
+</pkgmetadata>
