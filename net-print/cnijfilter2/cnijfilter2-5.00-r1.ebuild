@@ -3,7 +3,7 @@
 
 EAPI=6
 
-LICENSE="BSD"
+LICENSE="Canon-IJ GPL-2"
 SLOT="0"
 KEYWORDS="~amd64"
 IUSE=""
