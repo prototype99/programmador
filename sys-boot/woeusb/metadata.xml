@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>alexander.konotop@gmail.com</email>
+		<name>Alexander Konotop</name>
+	</maintainer>
+	<longdescription>A simple tool to create your own usb stick windows installer from an iso image or DVD</longdescription>
+</pkgmetadata>
