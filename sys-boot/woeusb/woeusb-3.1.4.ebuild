@@ -25,8 +25,9 @@ RDEPEND="${DEPEND}
 	sys-block/parted
 	sys-fs/ntfs3g
 	sys-fs/dosfstools
-	sys-boot/grub:2
+	sys-boot/grub:2[grub_platforms_pc]
 	x11-libs/wxGTK:3.0
+	net-misc/wget
 "
 
 src_prepare() {
