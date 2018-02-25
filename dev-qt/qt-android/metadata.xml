@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>alexander.konotop@gmail.com</email>
+		<name>Alexander Konotop</name>
+	</maintainer>
+	<upstream>
+		<bugs-to>https://bugreports.qt.io/</bugs-to>
+		<doc>https://doc.qt.io/</doc>
+	</upstream>
+	<slots>
+		<subslots>
+			Must only be used by packages that are known to use private parts of the Qt API.
+		</subslots>
+	</slots>
+	<longdescription lang="en">
+		Full Qt package for android apps development. It's being built with Android NDK.
+	</longdescription>
+	<use>
+		<flag name="android-arch_armeabi">Build for armeabi arch</flag>
+		<flag name="android-arch_armeabi-v7a">Build for armeabi-v7a arch</flag>
+		<flag name="android-arch_arm64-v8a">Build for arm64-v8a arch</flag>
+		<flag name="android-arch_mips">Build for mips arch</flag>
+		<flag name="android-arch_mips64">Build for mips64 arch</flag>
+		<flag name="android-arch_x86">Build for x86 arch</flag>
+		<flag name="android-arch_x86_64">Build for x86_64 arch</flag>
+		<flag name="clang">
+			Use Clang insteadof GCC for arches which are buildable with Clang from required
+			<pkg>dev-util/android-ndk</pkg> version
+		</flag>
+	</use>
+</pkgmetadata>

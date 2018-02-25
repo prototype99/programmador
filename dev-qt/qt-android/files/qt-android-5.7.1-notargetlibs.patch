@@ -1,0 +1,9 @@
+--- qttools/src/qtplugininfo/qtplugininfo.pro.orig	2016-11-03 10:31:16.000000000 +0200
++++ qttools/src/qtplugininfo/qtplugininfo.pro	2018-02-05 00:23:31.814382271 +0200
+@@ -1,5 +1,6 @@
+ SOURCES = qtplugininfo.cpp
+ QT = core
+ CONFIG += console
++CONFIG -= android_install
+ 
+ load(qt_app)
