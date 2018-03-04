@@ -11,11 +11,8 @@ KEYWORDS="~amd64"
 
 IUSE=""
 
-COMMON_DEPEND="
-	=dev-qt/qt-docs-${PV%.*}*
-"
-DEPEND="${COMMON_DEPEND}"
-RDEPEND="${COMMON_DEPEND}"
+DEPEND=""
+RDEPEND=""
 
 case ${PV} in
 	5.9999)
